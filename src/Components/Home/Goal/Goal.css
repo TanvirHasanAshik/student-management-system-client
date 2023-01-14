@@ -1,0 +1,9 @@
+.goal {
+    text-decoration: none;
+    color: dimgray;
+}
+
+.goal:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px lightgrey;
+}
