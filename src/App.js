@@ -7,6 +7,7 @@ import Header from './Components/Shared/Header/Header';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import StudentGoalDetails from './Components/StudentGoalDetails/StudentGoalDetails';
+import AddDailyClassWork from './Components/Dashboard/AddDailyClassWork/AddDailyClassWork';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/studentGoals" element={<StudentGoals></StudentGoals>}></Route>
         <Route path="/student/goal/details/:id" element={<StudentGoalDetails>
         </StudentGoalDetails>}></Route>
+        <Route path="/addDailyClassWork" element={<AddDailyClassWork></AddDailyClassWork>}></Route>
       </Routes>
       <ToastContainer />
     </>

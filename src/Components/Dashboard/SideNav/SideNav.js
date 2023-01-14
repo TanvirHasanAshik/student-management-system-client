@@ -21,10 +21,10 @@ const Sidenav = () => {
                 <div className="offcanvas-body">
                     <ul className="navbar-nav side-nav ms-2 ps-2">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/studentGoals">Student Goals</Link>
+                            <Link className="nav-link" to="/studentGoals">Add Student Goals</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">Another action</Link>
+                            <Link className="nav-link" to="/addDailyClassWork">Add Daily Classes Work</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="#">Something else here</Link>

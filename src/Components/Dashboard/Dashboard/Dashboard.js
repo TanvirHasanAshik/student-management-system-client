@@ -7,7 +7,7 @@ const Dashboard = () => {
                 <div className="col-md-1">
                     <SideNav></SideNav>
                 </div>
-                <div className="col-md-11 col-10 bg-secondary-subtle">
+                <div className="col-md-11 col-sm-12 col-12 bg-secondary-subtle">
                     <p className="fs-5 text-center mt-2">Dashboard</p>
                 </div>
             </div>

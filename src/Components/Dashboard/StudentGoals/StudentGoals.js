@@ -64,7 +64,7 @@ const StudentGoals = () => {
                 <div className="col-md-1">
                     <SideNav></SideNav>
                 </div>
-                <div className="col-md-11 col-10 bg-secondary-subtle">
+                <div className="col-md-11 col-sm-12 col-12 bg-secondary-subtle">
                     <p className="fs-5 text-center mt-2">Add students goals</p>
                     <form onSubmit={handleSubmit} className="row g-3 d-flex justify-content-center">
                         <div className="col-md-10">
