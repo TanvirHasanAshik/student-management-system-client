@@ -8,6 +8,11 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import StudentGoalDetails from './Components/StudentGoalDetails/StudentGoalDetails';
 import AddDailyClassWork from './Components/Dashboard/AddDailyClassWork/AddDailyClassWork';
+import AssignHomeWork from './Components/Dashboard/AssignHomeWork/AssignHomeWork';
+import UpdateCompleteLesson from './Components/Dashboard/UpdateCompleteLesson/UpdateCompleteLesson';
+import AdminModerator from './Components/Dashboard/AdminModerator/AdminModerator';
+import Register from './Components/Registration/Register/Register';
+import Login from './Components/Registration/Login/Login';
 
 function App() {
   return (
@@ -20,6 +25,11 @@ function App() {
         <Route path="/student/goal/details/:id" element={<StudentGoalDetails>
         </StudentGoalDetails>}></Route>
         <Route path="/addDailyClassWork" element={<AddDailyClassWork></AddDailyClassWork>}></Route>
+        <Route path="/assignHomeWork" element={<AssignHomeWork></AssignHomeWork>}></Route>
+        <Route path="/updateCompleteLesson" element={<UpdateCompleteLesson></UpdateCompleteLesson>}></Route>
+        <Route path="/addAdminModerator" element={<AdminModerator></AdminModerator>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
       </Routes>
       <ToastContainer />
     </>

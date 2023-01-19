@@ -19,21 +19,31 @@ const Sidenav = () => {
                     </button>
                 </div>
                 <div className="offcanvas-body">
-                    <ul className="navbar-nav side-nav ms-2 ps-2">
-                        <li className="nav-item">
+                    <ul className="navbar-nav side-nav ms-2 ps-2 ">
+                        <li className="nav-item ">
                             <Link className="nav-link" to="/studentGoals">Add Student Goals</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/addDailyClassWork">Add Daily Classes Work</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">Something else here</Link>
+                            <Link className="nav-link" to="/assignHomeWork">Assign Home Work</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">Something else here</Link>
+                            <Link className="nav-link" to="/updateCompleteLesson">Update Complete Lesson
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">Something else here</Link>
+                            <div class="dropdown">
+                                <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin and Moderator
+                                </Link>
+                                <ul class="dropdown-menu side-nav-dropdown m-0 text-center" style={{ width: '200px', padding: '0px', borderRadius: '0' }}>
+                                    <li><Link className="nav-link" to="/addAdminModerator">Add Admin / Moderator </Link></li>
+                                    <li><Link className="nav-link" to="/addAdminModerator">Edit Admin - Moderator</Link></li>
+                                </ul>
+                            </div>
+
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="#">Something else here</Link>

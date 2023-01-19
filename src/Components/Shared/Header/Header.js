@@ -37,10 +37,6 @@ const Header = () => {
                                 <li><Link className="dropdown-item" to="/update-completed-lesson">Update completed lesson</Link></li>
                                 <li><hr className="dropdown-divider" /></li>
                                 <li><Link className="dropdown-item" to="/result">Academic Result</Link></li>
-                                <li><hr className="dropdown-divider" /></li>
-                                <li><Link className="dropdown-item" to="/lesson-plan">lesson plan</Link></li>
-                                <li><hr className="dropdown-divider" /></li>
-                                <li><Link className="dropdown-item" to="/syllabus-scheduling">Syllabus scheduling</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
