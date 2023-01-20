@@ -10,12 +10,13 @@ import StudentGoalDetails from './Components/StudentGoalDetails/StudentGoalDetai
 import AddDailyClassWork from './Components/Dashboard/AddDailyClassWork/AddDailyClassWork';
 import AssignHomeWork from './Components/Dashboard/AssignHomeWork/AssignHomeWork';
 import UpdateCompleteLesson from './Components/Dashboard/UpdateCompleteLesson/UpdateCompleteLesson';
-import AdminModerator from './Components/Dashboard/AdminModerator/AdminModerator';
+import AdminModeratorAdd from './Components/Dashboard/AdminModeratorAdd/AdminModeratorAdd';
 import Register from './Components/Registration/Register/Register';
 import Login from './Components/Registration/Login/Login';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
-import AdminModeratorEdit from './Components/Dashboard/AdminModeratorEdit/AdminModeratorEdit';
 import AddStudentInformation from './Components/Dashboard/AddStudentInformation/AddStudentInformation';
+import AdminModeratorList from './Components/Dashboard/AdminModeratorList/AdminModeratorList';
+import AdminModeratorUpdate from './Components/Dashboard/AdminModeratorUpdate/AdminModeratorUpdate';
 
 function App() {
   return (
@@ -32,10 +33,12 @@ function App() {
         <Route path="/addDailyClassWork" element={<AddDailyClassWork></AddDailyClassWork>}></Route>
         <Route path="/assignHomeWork" element={<AssignHomeWork></AssignHomeWork>}></Route>
         <Route path="/updateCompleteLesson" element={<UpdateCompleteLesson></UpdateCompleteLesson>}></Route>
-        <Route path="/addAdminModerator" element={<AdminModerator></AdminModerator>}>
+        <Route path="/addAdminModerator" element={<AdminModeratorAdd></AdminModeratorAdd>}>
         </Route>
-        <Route path="/editAdminModerator" element={<AdminModeratorEdit></AdminModeratorEdit>}></Route>
+        <Route path="/showAdminModerator" element={<AdminModeratorList></AdminModeratorList>}></Route>
         <Route path="/addStudent" element={<AddStudentInformation></AddStudentInformation>}></Route>
+        <Route path="/updateAdminInformation/:id" element={<AdminModeratorUpdate>
+        </AdminModeratorUpdate>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
       </Routes>

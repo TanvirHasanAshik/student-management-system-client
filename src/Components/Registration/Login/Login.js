@@ -36,11 +36,11 @@ const Login = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="form-floating mb-3">
                             <input name="email" required type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                            <label for="floatingInput">Email address</label>
+                            <label htmlFor="floatingInput">Email address</label>
                         </div>
                         <div className="form-floating mb-3">
                             <input required name="password" type="password" className="form-control" id="floatingPassword" placeholder="Password" />
-                            <label for="floatingPassword">Password</label>
+                            <label htmlFor="floatingPassword">Password</label>
                         </div>
                         <div className="form-floating mb-3 d-flex">
                             <input className='btn btn-success me-2' type="submit" value="Login" />

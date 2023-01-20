@@ -97,7 +97,7 @@ const StudentGoals = () => {
                             <input onBlur={handleGoalType} type="text" name="goalType" className="form-control" />
                         </div>
                         <div className="col-md-5">
-                            <label for="formFile" class="form-label">Select an Icon</label>
+                            <label htmlFor="formFile" className="form-label">Select an Icon</label>
                             <input required onChange={handleChange} className="form-control" type="file" name="file" id="formFile" />
                         </div>
 

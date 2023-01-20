@@ -53,7 +53,7 @@ const UpdateCompleteLesson = () => {
                     <form onSubmit={handleSubmit}>
                         <div className='row g-2 justify-content-center'>
                             <div className='mb-3 col-md-5'>
-                                <label for='validationCustom04' className='form-label'>Select Class</label>
+                                <label htmlFor='validationCustom04' className='form-label'>Select Class</label>
                                 <select name='className' className='form-select' id='validationCustom04' required>
                                     <option selected disabled>Select Class</option>
                                     <option value='Class-i'>Class-i</option>
@@ -69,7 +69,7 @@ const UpdateCompleteLesson = () => {
                                 </select>
                             </div>
                             <div className='mb-3 col-md-5'>
-                                <label for='exampleFormControlInput1' className='form-label'>
+                                <label htmlFor='exampleFormControlInput1' className='form-label'>
                                     Subject Name
                                 </label>
                                 <input required name='subject' type='text' className='form-control' id='exampleFormControlInput1' placeholder='Enter Subject Name' />
@@ -77,13 +77,13 @@ const UpdateCompleteLesson = () => {
                         </div>
                         <div className='row g-2 justify-content-center'>
                             <div className='mb-3 col-md-5'>
-                                <label for='exampleFormControlInput1' className='form-label'>
+                                <label htmlFor='exampleFormControlInput1' className='form-label'>
                                     Teacher Name
                                 </label>
                                 <input required name='teacherName' type='text' className='form-control' id='exampleFormControlInput1' placeholder='Enter Teacher Name' />
                             </div>
                             <div className='mb-3 col-md-5'>
-                                <label for='exampleFormControlInput1' className='form-label'>
+                                <label htmlFor='exampleFormControlInput1' className='form-label'>
                                     A subject Total lesson
                                 </label>
                                 <select name='totalLesson' className='form-select' id='validationCustom04' required>
@@ -193,13 +193,13 @@ const UpdateCompleteLesson = () => {
                         </div>
                         <div className='row g-2 justify-content-center'>
                             <div className='mb-3 col-md-5'>
-                                <label for='exampleFormControlInput1' className='form-label'>
+                                <label htmlFor='exampleFormControlInput1' className='form-label'>
                                     Which lesson is completed
                                 </label>
                                 <input required name='completedLesson' type='text' className='form-control' id='exampleFormControlInput1' placeholder='Which lesson is completed?' />
                             </div>
                             <div className='mb-3 col-md-5'>
-                                <label for='exampleFormControlInput1' className='form-label'>
+                                <label htmlFor='exampleFormControlInput1' className='form-label'>
                                     Lesson Complete Date
                                 </label>
                                 <input required name='lessonCompleteDate' type='date' className='form-control' id='exampleFormControlInput1' />
@@ -207,7 +207,7 @@ const UpdateCompleteLesson = () => {
                         </div>
                         <div className='row g-2 justify-content-center'>
                             <div className='mb-3 col-md-10'>
-                                <label for='exampleFormControlTextarea1' className='form-label'>Description</label>
+                                <label htmlFor='exampleFormControlTextarea1' className='form-label'>Description</label>
                                 <textarea name='description' className='form-control' id='exampleFormControlTextarea1' rows='3'></textarea>
                             </div>
                             <div className='mb-3 col-md-10'>

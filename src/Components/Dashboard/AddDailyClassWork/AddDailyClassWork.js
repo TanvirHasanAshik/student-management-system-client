@@ -54,7 +54,7 @@ const AddDailyClassWork = () => {
                     <form onSubmit={handleSubmit} className="m-5">
                         <div className="row g-2 d-flex justify-content-center">
                             <div className="col-md-4">
-                                <label for="validationCustom04" className="form-label">Select Class</label>
+                                <label htmlFor="validationCustom04" className="form-label">Select Class</label>
                                 <select name='class' className="form-select" id="validationCustom04" required>
                                     <option selected disabled>Select Class</option>
                                     <option value="Class-i">Class-i</option>
@@ -70,27 +70,27 @@ const AddDailyClassWork = () => {
                                 </select>
                             </div>
                             <div className="col-md-4">
-                                <label for="formFile" className="form-label">Upload Book Image</label>
+                                <label htmlFor="formFile" className="form-label">Upload Book Image</label>
                                 <input required onChange={handleChange} className="form-control" type="file" id="formFile" />
                             </div>
                             <div className="col-md-4">
-                                <label for="chapter" className="form-label">Chapter</label>
+                                <label htmlFor="chapter" className="form-label">Chapter</label>
                                 <input required name="chapter" className="form-control" type="text" id="chapter" placeholder='Book Chapter' />
                             </div>
                         </div>
                         <div className="row g-2 mt-2 d-flex justify-content-center">
                             <div className="col-md-6">
-                                <label for="formFile" className="form-label">Subject</label>
+                                <label htmlFor="formFile" className="form-label">Subject</label>
                                 <input required name="subject" className="form-control" type="text" id="formFile" placeholder='Subject' />
                             </div>
                             <div className="col-md-6">
-                                <label for="formFile" className="form-label">Subject Topic</label>
+                                <label htmlFor="formFile" className="form-label">Subject Topic</label>
                                 <input required name="topic" className="form-control" type="text" id="formFile" placeholder='Subject Topic' />
                             </div>
                         </div>
                         <div className="row g-2 mt-2 d-flex justify-content-center">
                             <div className="col-md-12">
-                                <label for="exampleFormControlTextarea1" className="form-label">Description</label>
+                                <label htmlFor="exampleFormControlTextarea1" className="form-label">Description</label>
                                 <textarea name="description" className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                         </div>

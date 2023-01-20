@@ -63,19 +63,19 @@ const Register = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="form-floating mb-3">
                             <input required name='displayName' type="text" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                            <label for="floatingInput">Full Name</label>
+                            <label htmlFor="floatingInput">Full Name</label>
                         </div>
                         <div className="form-floating mb-3">
                             <input required type="email" name="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                            <label for="floatingInput">Email Address</label>
+                            <label htmlFor="floatingInput">Email Address</label>
                         </div>
                         <div className="form-floating mb-3">
                             <input required name="password" type="password" className="form-control" id="floatingPassword" placeholder="Password" />
-                            <label for="floatingPassword">Password</label>
+                            <label htmlFor="floatingPassword">Password</label>
                         </div>
                         <div className="form-floating mb-3">
                             <input required name="confirmPassword" type="password" className="form-control" id="floatingPassword" placeholder="ConfirmPassword" />
-                            <label for="floatingPassword">Confirm Password</label>
+                            <label htmlFor="floatingPassword">Confirm Password</label>
                         </div>
                         <div className="form-floating mb-3 d-flex">
                             <input className='btn btn-success me-2' type="submit" value="Register" />

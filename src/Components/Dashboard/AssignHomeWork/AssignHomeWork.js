@@ -43,7 +43,7 @@ const AssignHomeWork = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="row g-2 justify-content-center">
                             <div className="mb-3 col-md-5">
-                                <label for="validationCustom04" className="form-label">Select Class</label>
+                                <label htmlFor="validationCustom04" className="form-label">Select Class</label>
                                 <select name='className' className="form-select" id="validationCustom04" required>
                                     <option selected disabled>Select Class</option>
                                     <option value="Class-i">Class-i</option>
@@ -59,7 +59,7 @@ const AssignHomeWork = () => {
                                 </select>
                             </div>
                             <div className="mb-3 col-md-5">
-                                <label for="exampleFormControlInput1" className="form-label">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">
                                     Subject Name
                                 </label>
                                 <input required name="subject" type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Subject Name" />
@@ -67,13 +67,13 @@ const AssignHomeWork = () => {
                         </div>
                         <div className="row g-2 justify-content-center">
                             <div className="mb-3 col-md-5">
-                                <label for="exampleFormControlInput1" className="form-label">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">
                                     Subject Topic
                                 </label>
                                 <input required name="topic" type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Subject Topic" />
                             </div>
                             <div className="mb-3 col-md-5">
-                                <label for="exampleFormControlInput1" className="form-label">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">
                                     Chapter
                                 </label>
                                 <input required name="chapter" type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Chapter" />
@@ -81,13 +81,13 @@ const AssignHomeWork = () => {
                         </div>
                         <div className="row g-2 justify-content-center">
                             <div className="mb-3 col-md-5">
-                                <label for="exampleFormControlInput1" className="form-label">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">
                                     Submission Date
                                 </label>
                                 <input required name="submissionDate" type="date" className="form-control" id="exampleFormControlInput1" placeholder="Enter Chapter" />
                             </div>
                             <div className="mb-3 col-md-5">
-                                <label for="exampleFormControlInput1" className="form-label">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">
                                     Course Teacher Name
                                 </label>
                                 <input required name="teacherName" type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Course Teacher Name" />
@@ -95,7 +95,7 @@ const AssignHomeWork = () => {
                         </div>
                         <div className="row g-2 justify-content-center">
                             <div className="mb-3 col-md-10">
-                                <label for="exampleFormControlTextarea1" className="form-label">Description</label>
+                                <label htmlFor="exampleFormControlTextarea1" className="form-label">Description</label>
                                 <textarea name="description" className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                             <div className="mb-3 col-md-10">

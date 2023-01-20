@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import SideNav from '../SideNav/SideNav';
 
-const AdminModerator = () => {
+const AdminModeratorAdd = () => {
     const [status, setStatus] = useState('');
     const [error, setError] = useState(null);
 
@@ -65,7 +65,7 @@ const AdminModerator = () => {
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="exampleInputEmail1" className="form-label">Email address</label>
+                                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                                     <input type="email" name='email' className="form-control" placeholder='Enter Email Address' required />
                                 </div>
                                 <div>
@@ -83,4 +83,4 @@ const AdminModerator = () => {
     );
 };
 
-export default AdminModerator;
+export default AdminModeratorAdd;
