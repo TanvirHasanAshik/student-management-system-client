@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword, useSignInWithFacebook, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.config.init';
 import { async } from '@firebase/util';
 
@@ -14,6 +14,8 @@ const Register = () => {
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const [errorMessage, setErrorMessage] = useState('');
+    const navigate = useNavigate();
+    const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
 
     const handleSubmit = async e => {
         e.preventDefault();
@@ -36,13 +38,21 @@ const Register = () => {
         updateProfile({ displayName });
         e.target.reset();
     }
+    /* firebase google sing in */
+    const handleGoogleLogin = (e) => {
+        signInWithGoogle();
+    }
+    if (user || googleUser) {
+        navigate('/')
+    }
     useEffect(() => {
         if (error) {
             setErrorMessage(error.message);
         }
-    }, [error])
+    }, [error]);
+
     if (user) {
-        console.log(user)
+        navigate('/')
     }
     return (
         <div className="container">
@@ -72,6 +82,17 @@ const Register = () => {
                             <Link to='/login'>Already have an account? Please Login</Link>
                         </div>
                     </form>
+
+                    <div className='d-flex align-items-center justify-content-center'>
+                        <div className='border-top w-50 p-1'></div>
+                        <div className='mb-2 p-2'>or</div>
+                        <div className='border-top w-50 p-1'></div>
+                    </div>
+                </div>
+            </div>
+            <div className="row d-flex justify-content-center mb-5">
+                <div className="col-md-6 text-center">
+                    <button onClick={handleGoogleLogin} className="btn btn-Light border border-warning me-2">Login With Google</button>
                 </div>
             </div>
 

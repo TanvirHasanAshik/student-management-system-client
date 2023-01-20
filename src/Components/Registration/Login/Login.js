@@ -1,17 +1,17 @@
 import React from 'react';
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { useAuthState, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.config.init';
 
 const Login = () => {
+    const location = useLocation();
+    const from = location?.state?.from?.pathname || '/';
     const navigate = useNavigate();
-    const [
-        signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useSignInWithEmailAndPassword(auth);
+
+    const [user] = useAuthState(auth);
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
+    const [signInWithEmailAndPassword, emailUser, loading, error,] = useSignInWithEmailAndPassword(auth);
+
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -19,12 +19,15 @@ const Login = () => {
         const password = e.target.password.value;
         signInWithEmailAndPassword(email, password);
     }
+
+    /* firebase google sing in */
     const handleGoogleLogin = (e) => {
         signInWithGoogle();
     }
-    if (user || googleUser) {
-        navigate('/')
+    if (user) {
+        navigate(from, { replace: true })
     }
+
     return (
         <div className="container">
             <div className="row justify-content-center">
@@ -55,7 +58,6 @@ const Login = () => {
             <div className="row d-flex justify-content-center">
                 <div className="col-md-6 text-center">
                     <button onClick={handleGoogleLogin} className="btn btn-Light border border-warning me-2">Login With Google</button>
-                    <button className="btn btn-Light border border-primary">Login With Facebook</button>
                 </div>
             </div>
         </div>

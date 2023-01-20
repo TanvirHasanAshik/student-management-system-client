@@ -13,6 +13,9 @@ import UpdateCompleteLesson from './Components/Dashboard/UpdateCompleteLesson/Up
 import AdminModerator from './Components/Dashboard/AdminModerator/AdminModerator';
 import Register from './Components/Registration/Register/Register';
 import Login from './Components/Registration/Login/Login';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
+import AdminModeratorEdit from './Components/Dashboard/AdminModeratorEdit/AdminModeratorEdit';
+import AddStudentInformation from './Components/Dashboard/AddStudentInformation/AddStudentInformation';
 
 function App() {
   return (
@@ -20,14 +23,19 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+        <Route path="/dashboard" element={<RequireAuth>
+          <Dashboard></Dashboard>
+        </RequireAuth>}></Route>
         <Route path="/studentGoals" element={<StudentGoals></StudentGoals>}></Route>
         <Route path="/student/goal/details/:id" element={<StudentGoalDetails>
         </StudentGoalDetails>}></Route>
         <Route path="/addDailyClassWork" element={<AddDailyClassWork></AddDailyClassWork>}></Route>
         <Route path="/assignHomeWork" element={<AssignHomeWork></AssignHomeWork>}></Route>
         <Route path="/updateCompleteLesson" element={<UpdateCompleteLesson></UpdateCompleteLesson>}></Route>
-        <Route path="/addAdminModerator" element={<AdminModerator></AdminModerator>}></Route>
+        <Route path="/addAdminModerator" element={<AdminModerator></AdminModerator>}>
+        </Route>
+        <Route path="/editAdminModerator" element={<AdminModeratorEdit></AdminModeratorEdit>}></Route>
+        <Route path="/addStudent" element={<AddStudentInformation></AddStudentInformation>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
       </Routes>
