@@ -66,7 +66,7 @@ const Sidenav = () => {
                             <Link className="nav-link" to="/addStudent">Add Student</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">Something else here</Link>
+                            <Link className="nav-link" to="/studentDashboard">Student Dashboard</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="#">Something else here</Link>

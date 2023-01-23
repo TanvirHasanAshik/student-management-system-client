@@ -54,7 +54,7 @@ const AdminModeratorUpdate = () => {
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Status</label>
                             <select name="status" className="form-select" aria-label="Default select example">
-                                <option selected>Select Your Option</option>
+                                <option disabled>Select Your Option</option>
                                 <option value="Admin">Admin</option>
                                 <option value="Moderator">Moderator</option>
                             </select>

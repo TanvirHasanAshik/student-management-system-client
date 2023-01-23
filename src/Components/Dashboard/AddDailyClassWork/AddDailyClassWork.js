@@ -66,7 +66,7 @@ const AddDailyClassWork = () => {
                                     <option value="Class-vii">Class-vii</option>
                                     <option value="Class-viii">Class-viii</option>
                                     <option value="Class-ix">Class-ix</option>
-                                    <option value="1Class-x">Class-x</option>
+                                    <option value="Class-x">Class-x</option>
                                 </select>
                             </div>
                             <div className="col-md-4">

@@ -9,7 +9,7 @@ const Goal = ({ goal }) => {
     }
     return (
         <div onClick={handleDetails} className='goal col-md-3 col-sm-6 col-12 border text-center  m-2 p-3'>
-            <LazyLoadImage className='w-25' src={`data:image/png;base64,${goal.image?.img}`} alt="" />
+            <LazyLoadImage className='w-25' src={`data:${goal.image.contentType};base64,${goal.image?.img}`} alt="" />
             <p className='fs-5'>{goal.goalName}</p>
         </div>
     );
